@@ -1,0 +1,10 @@
+nav {
+    display:flex;
+    justify-content: space-around;
+}
+
+.navItem {
+    background-color: #eee;
+    flex: 1;
+    margin: 15px;
+}
