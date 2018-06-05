@@ -3,11 +3,14 @@ import './Intro.css';
 
 
 export class Intro extends Component {
-    render(){
+    render() {
         return (
-            <div id={'intro'} style={{ height:'90vh',
-            background:'red'}}  
-            />
+            <div id={'intro'}>
+                <div class='blurb'>
+                    <h1> Chris Boyle Woodworking</h1>
+                    <p>This is a place where Chris Boyle comes to make art.</p>
+                </div>
+            </div>
         )
     }
 }
