@@ -1,10 +1,26 @@
 nav {
     display:flex;
-    justify-content: space-around;
+    justify-content: flex-end;  
+    margin-bottom: -10vh;
 }
 
+@keyframes navColorChange {
+    from {color: white;}
+    to {color: orange;}
+}
+
+
 .navItem {
-    background-color: #eee;
-    flex: 1;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
     margin: 15px;
+    font-size: 1.2em;
+}
+
+.navItem:hover {
+    animation-name: navColorChange;
+    color: orange; 
+    cursor: pointer;
+    animation-duration: .5s;
+    
 }
