@@ -6,13 +6,14 @@ import { Gallery } from './components/Gallery/Gallery.js';
 import { Request } from './components/Request/Request.js';
 import { Contact } from './components/Contact/Contact.js';
 import { Nav } from './components/Nav/Nav.js';
+import { RequestFullscreen } from './components/Request/RequestFullscreen.js';
 
 class App extends Component {
 
   constructor(props) {
     super(props);
-
     this.scrollTo = this.scrollTo.bind(this);
+    this.state = {request: false};
   }
 
   scrollTo(id){
@@ -27,6 +28,7 @@ class App extends Component {
         <Gallery />
         <Request />
         <Contact />
+        <RequestFullscreen />
       </div>
     );
   }

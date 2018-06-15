@@ -1,0 +1,55 @@
+#request-fullscreen{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200vh;
+    background-color: #A39A96;
+}
+
+.item{
+    display: flex;/*maybe redundant*/
+    justify-content: flex-start;
+    width: 75%;
+    padding: 2% 2%;
+    text-align: left;
+    box-shadow: -5px -2px 7px -1px rgb(131, 131, 131);
+    border-radius: 6px;
+    background-color: #CCC7C5;
+}
+
+/* .item div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.info{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin-left: 3%;
+    /* align-content: flex-start; */
+}
+
+.item img{
+    /* There is some weirdness when 
+    images get too small they scale differently 
+    then the rest of the item */
+    
+    height: 15%;
+    width: 15%;
+}
+
+.button-item{
+    display: flex;/*maybe redundant*/
+    justify-content: flex-end;
+    width: 75%;
+    padding: 1% 2%;
+    text-align: left;
+}
+
+#send-request{
+    color: purple;
+}

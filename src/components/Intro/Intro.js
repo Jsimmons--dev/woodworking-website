@@ -7,7 +7,8 @@ export class Intro extends Component {
         return (
             <div id={'intro'}>
                 <div class='blurb'>
-                    <h1> Chris Boyle Woodworking</h1>
+                    <h1> CB Woodworks</h1>
+                    {/* <h6 class='est'>Est. 2014</h6> */}
                     <p>This is a place where Chris Boyle comes to make art.</p>
                 </div>
             </div>

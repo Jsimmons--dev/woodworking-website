@@ -10,10 +10,12 @@
 .blurb {
     text-align: center;
     color: #fff;
-    font-size: 2em;
-    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3em;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Oleo Script', cursive;
 }
+
 .blurb p{
-    font-weight: 300;
+    font-weight: 200;
     font-style: italic;
 }

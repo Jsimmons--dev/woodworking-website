@@ -1,0 +1,40 @@
+#request{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    background-color:#8DAA91;
+}
+
+.request-blurb{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3em;
+    color: #eee;
+    margin: 0 10%;
+}
+
+#request-button{
+    border-radius: 50px;
+    border-style: none;
+    height: 10vh;
+    width: 33%;
+    background-color:#85C7F2;
+
+    /* margin-top: 7%; */
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: .7em;
+    color: #333;
+}
+
+@keyframes buttonColorChange {
+    from {background-color: #85C7F2;}
+    to {background-color: rgb(99, 150, 185);}
+}
+
+#request-button:hover{
+    animation-name: buttonColorChange;
+    background-color: rgb(99, 150, 185);
+    cursor: pointer;
+    animation-duration: .5s;
+}
+
