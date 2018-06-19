@@ -11,7 +11,7 @@ export class Gallery extends Component {
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 6000,
             pauseOnHover: false,
             variableWidth: true,
@@ -25,12 +25,12 @@ export class Gallery extends Component {
         ]
         let imgs = urls.map(url => (
             <div>
-                <img style={{ height: '80vh', 'padding': '5vh 1vw 0 1vw'}} src={'../../assets/' + url} />
+                <img style={{ height: '80vh', 'padding': '2vh 1vw 0 0vw'}} src={'../../assets/' + url} />
             </div>
         ));
         return (
             <div id={'gallery'} style={{
-                height: '90vh',
+                height: '86vh',
             }}
             >
                 <Slider style={{ width: '50vw' }} {...settings}>
