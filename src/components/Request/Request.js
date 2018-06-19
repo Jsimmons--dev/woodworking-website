@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './Request.css';
 
 export class Request extends Component {
-    render(){
+    render() {
         return (
             <div id={'request'}>
-            
-            <div class='request-blurb'>
-                <p>Interested in purchasing any of the items above, or commisioning some work?</p>  
-                <button id="request-button">send a request!</button>
-            </div>
-            
+
+                <div class='request-blurb'>
+                    <p>Interested in purchasing any of the items above, or commissioning some work?</p>
+                    <Link to={'/request'}><button id="request-button">send a request!</button></Link>
+                </div>
+
             </div>
         )
     }
