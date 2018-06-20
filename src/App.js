@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 
 import { Home } from './components/Home/Home.js';
-import { Main } from './components/Main/Main.js';
-import { Switch, Route } from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import { Switch, Route, withRouter } from 'react-router-dom';
 import { RequestFullscreen } from './components/RequestFullscreen/RequestFullscreen';
 
 class App extends Component {
@@ -19,16 +19,21 @@ class App extends Component {
   }
 
   render() {
+    const { location } = this.props;
+    console.log(location);
     return (
       <div>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/request' component={RequestFullscreen} />
-        </Switch>
-        <Main />
+        <TransitionGroup>
+          <CSSTransition key={location.key} classNames={location.pathname === '/' ? "fade-out" : 'fade-right'} timeout={250}>
+            <Switch location={location}>
+              <Route exact path='/' component={Home} />
+              <Route path='/request' component={RequestFullscreen} />
+            </Switch>
+          </CSSTransition>
+        </TransitionGroup>
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(App);

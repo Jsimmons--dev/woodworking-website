@@ -3,8 +3,13 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 200vh;
+    height: 100vh;
     background-color: #A39A96;
+    width: 100vw;
+    z-index: 1;
+    position: fixed;
+    top: 0%;
+    left: 0%;
 }
 
 .item{
