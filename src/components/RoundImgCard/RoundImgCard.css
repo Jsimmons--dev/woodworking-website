@@ -2,9 +2,14 @@
     display: inline-block;
 }
 
-.round-img-card img {
-    max-width: 100%;
-    width: auto;
-    overflow: hidden;
+.round-img-card .img-container {
     border-radius: 50%;
+    width:80%;
+    height:80%;
+    overflow: hidden;    
+}
+
+.round-img-card .img-container img {
+    max-width:100%;
+    max-height:100%;
 }

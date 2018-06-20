@@ -8,8 +8,8 @@ export class RoundImgCard extends Component {
     }
 
     render() {
-        const { direction = 'up', children = [], size } = this.props;
-        const image = <div className='img-container'><img src={this.props.imgSrc} style={{ width: size, height: size }} /></div>;
+        const { direction = 'up', children = [], size = '100px' } = this.props;
+        const image = <div className='img-container' style={{height:size, width: size}}><img src={this.props.imgSrc} /></div>;
         const content = direction === 'up' ? [image, children]
             : [children, image];
         return (

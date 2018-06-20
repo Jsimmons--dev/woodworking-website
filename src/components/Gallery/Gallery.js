@@ -30,15 +30,20 @@ export class Gallery extends Component {
                 <img style={{ height: '30vh', 'padding': '2vh 1vw 0 0vw' }} src={'../../assets/' + url} />
             </div>
         ));
+
+        let imgSize = '20vw';
         return (
             <div id={'gallery'} style={{
                 height: '86vh',
             }}
             >
-                <RoundImgCard imgSrc='../../assets/board_low.jpg'>
+                <RoundImgCard imgSrc='../../assets/board_low.jpg' size={imgSize}>
                     <p>Blurb</p>
                 </RoundImgCard>
-                <RoundImgCard imgSrc='../../assets/board_low.jpg' direction='down'>
+                <RoundImgCard imgSrc='../../assets/cutting_low.jpg' direction='down' size={imgSize}>
+                    <p>Blurb</p>
+                </RoundImgCard>
+                <RoundImgCard imgSrc='../../assets/hank.jpg' size={imgSize}>
                     <p>Blurb</p>
                 </RoundImgCard>
                 {/* <Slider style={{ width: '50vw' }} {...settings}>
