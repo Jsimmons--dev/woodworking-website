@@ -1,0 +1,10 @@
+.round-img-card {
+    display: inline-block;
+}
+
+.round-img-card img {
+    max-width: 100%;
+    width: auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
