@@ -4,6 +4,12 @@
     align-items: center;
     height: 90vh;
     background-color:#8DAA91;
+
+    /* parallax effect stuff */
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transform-style: preserve-3d;
 }
 
 .request-blurb{
@@ -38,3 +44,38 @@
     animation-duration: .5s;
 }
 
+/* parallax classes */
+
+.parallax__layer{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.parallax__layer--base{
+    transform: translateZ(0);
+    z-index: 4;
+    height: 100vh;
+}
+
+.parallax__layer--back{
+    transform: translateZ(-2px) scale(2);
+    background-image: url("../../assets/parallax-foreground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    height: 100vh;
+}
+
+.parallax__layer--deep{
+    transform: translateZ(-100px) scale(75);
+    background-image: url("../../assets/parallax-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    height: 100%
+}
